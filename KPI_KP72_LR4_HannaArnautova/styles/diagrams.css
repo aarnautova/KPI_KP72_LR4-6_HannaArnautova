@@ -1,0 +1,29 @@
+:root {
+  --diagram-height: 300px;
+}
+
+.diagramCanvas {
+  width: 772px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.diagramColumn {
+  background-color: blueviolet;
+}
+
+.diagramItem {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  width: 100px;
+  background-color: crimson;
+  color: #ffffff;
+  text-align: center;
+}

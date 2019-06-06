@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/image_borders.css" />
+    <title>LAB 4: Task 1</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Lab 4</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link disabled" href="#">Task 1</a>
+          <a class="nav-item nav-link active" href="./task2.html">Task 2</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="row justify-content-center">
+          <img
+            class="border"
+            src="t1_image.jpg"
+            width="340"
+            alt="image"
+            id="image"
+          />
+        </div>
+        <hr />
+        <div class="row justify-content-center">
+          <div class="form-group">
+            <p class="font-weight-bold">Зміна розмірів:</p>
+            <div class="input-group mb-3 input-group-sm">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="img_width"
+                  >Ширина (width)</label
+                >
+              </div>
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="img_width"
+                required
+              />
+            </div>
+            <div class="input-group mb-3 input-group-sm">
+              <div class="input-group-prepend">
+                <label class="input-group-text " for="img_heigth"
+                  >Висота (height)</label
+                >
+              </div>
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="img_height"
+                required
+              />
+            </div>
+            <p class="font-weight-bold">Зміна рамки:</p>
+            <div class="input-group mb-3 input-group-sm">
+              <div class="input-group-prepend">
+                <label class="input-group-text">Товщина рамки</label>
+              </div>
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                id="img_frameWidth"
+                value="1"
+                required
+              />
+            </div>
+            <div class="input-group mb-3 input-group-sm">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="img_colorSelect"
+                  >Колір рамки</label
+                >
+              </div>
+              <select
+                class="custom-select custom-select-sm"
+                id="img_colorSelect"
+              >
+                <option selected>Стандарт</option>
+                <option value="1">Блакитний</option>
+                <option value="2">Фіолетовий</option>
+                <option value="3">Зелений</option>
+                <option value="4">Червоний</option>
+                <option value="5">Жовтий</option>
+                <option value="6">Чорний</option>
+              </select>
+            </div>
+            <p class="font-weight-bold">Додатково:</p>
+            <div class="input-group mb-3 input-group-sm">
+              <div class="input-group-prepend">
+                <label class="input-group-text">Альтернативний текст</label>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="img_altText"
+                value="image"
+                required
+              />
+            </div>
+            <button class="btn btn-outline-primary" id="submitButton">
+              Застосувати параметри
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scripts/task1.js"></script>
+  </body>
+</html>

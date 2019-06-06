@@ -1,0 +1,32 @@
+:root {
+  --border-width: 1px;
+}
+
+.img_border {
+  border: 1px solid;
+  border-width: var(--border-width);
+}
+
+.img_border-blue {
+  border-color: blue;
+}
+
+.img_border-red {
+  border-color: red;
+}
+
+.img_border-green {
+  border-color: green;
+}
+
+.img_border-yellow {
+  border-color: yellow;
+}
+
+.img_border-black {
+  border-color: black;
+}
+
+.img_border-blueviolet {
+  border-color: blueviolet;
+}
